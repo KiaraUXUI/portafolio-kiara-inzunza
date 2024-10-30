@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Service design club</title>
+    <!--Favicon página-->
+    <link rel="icon" href="..." type="image/x-icon">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--Barra de navegación-->
+    <nav class="container navbar navbar-expand-lg nav" id="nav">
+        <!--Logotipo-->
+        <div class="nav_logo navbar-brand">
+            <h1 class="nav_logo-font">Kiara Inzunza | Portafolio</h1>
+        </div>
+        <!--button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--collapsable-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <div class="nav_links">
+                    <ul class="nav_links-lista">
+                        <li> <a class="nav-link" href="index.html">Inicio</a></li>
+                        <li> <a class="nav-link disabled">Portafolio</a></li>
+                        <li> <a class="nav-link disabled">Acerca de</a></li>
+                        <li> <a class="nav-link disabled">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="nav_social-network">
+                    <a href="mailto:kiara.inzunza@gmail.com" target="_blank"><img src="assets/img/svg/mail.svg" alt="mail"></a>
+                    <a href="https://www.instagram.com/kiarauxui/" target="_blank"><img
+                            src="assets/img/svg/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/kiarainzunza/" target="_blank"> <img
+                            src="assets/img/svg/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://www.behance.net/kiarainzunza" target="_blank"><img src="assets/img/svg/behance.svg"
+                            alt="behance"></a>
+                    <a href="https://dribbble.com/kiarainzunza" target="_blank"><img src="assets/img/svg/dribbble.svg"
+                            alt="dribble"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="header" id="header">
+
+            <div class="img-contenedor">
+                <img src="assets/img/portadas/desafio-ui-camp-interno.png" alt="">
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="header_text col-xl-9">
+                        <!--Breadcrumb-->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Desafío Service design club</li>
+                            </ol>
+                        </nav>
+                        <p class="antetitulo">Bootcamp UI</p>
+                        <h1>Desafío Service design club</h1>
+                        <p>Recopilación de todos los diseños que realicé para el UI Camp de service design club,
+                            elaborando un diseño todos los dias durante 14 días. </p>
+                    </div>
+                    <!--Navegación desde PC-->
+                    <div class="navegacion col-xl-3">
+                        <ul>
+                            <li><a href="#descripcion">Descripción</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <ul>
+                                <li><a href="#dia-1">Twitter movile</a></li></li>
+                                <li><a href="#dia-2">Rural Uber</a></li></li>
+                                <li><a href="#dia-3">Reviews Zonaprop</a></li></li>
+                                <li><a href="#dia-4">Single product</a></li></li>
+                                <li><a href="#dia-5">Direct messaging</a></li></li>
+                                <li><a href="#dia-6">Music player</a></li></li>
+                                <li><a href="#dia-7">Search Results</a></li></li>
+                                <li><a href="#dia-8">Checkout</a></li></li>
+                                <li><a href="#dia-9">Analytics chart</a></li></li>
+                                <li><a href="#dia-10">E-Wallet</a></li></li>
+                                <li><a href="#dia-11">Habit tracker</a></li></li>
+                                <li><a href="#dia-12">Diseño en una hora</a></li></li>
+                                <li><a href="#dia-13">Delivery tracker</a></li></li>
+                                <li><a href="#dia-14">Portfolio page</a></li></li>
+                            </ul>
+                            <li><a href="#conclusion">Conclusion</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Navegacion desde celular-->
+                    <div class="dropdown navegacion-movil">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <!--Aqui va un comentario en caso de-->
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#descripcion">Descripción</a></li>
+                            <li><a class="dropdown-item" href="#proyectos">Proyectos</a></li>
+                            <li><a class="dropdown-item" href="#conclusion">Conclusión</a></li>
+                            
+                        </ul>
+                      </div>
+
+            </div>
+        </section>
+
+        <section class="contenido container">
+            <div class="row">
+                <div class="col-xl-9">
+
+                    <!--Descripción del texto-->
+                    <div class="descripcion pt-5 pb-4" id="descripcion">
+                        <h2>Descripción del desafío</h2>
+                        <p>El desafío de Service design Club es un bootcamp de diseño elaborado por diseñadores y con el objetivo de practicar las habilidades de diseño UI consistiendo en 14 retos diarios durante 2 semanas. Cada proyecto fue revisado y corregido para su presentación final.</p>
+
+                        <p><strong>Tiempo de desarrollo:</strong> 2 semanas (Desafío diario)</p>
+
+                    </div>
+
+                    <hr>
+
+                    <!--Mockups-->
+                    <div class="proyectos py-4" id="proyectos">
+                        <h2>Proyectos</h2>
+                        <p>Para la elaboración de cada proyecto recibí una descripción del desafío con la temática seleccionada, los elementos que debía contener y considerando el dispositivo en el que se visualizaría el diseño. Considerando el tiempo escaso para diseñar cada uno, solo busqué referentes y realicé el diseño apegandome a las convenciones de diseño de cada caso.</p>
+
+
+                        <!--Gallery-->
+                        <div class="gallery">
+
+                            <!--Dia 1-->
+                            <div class="row py-2" id="dia-1">
+                                <h4><strong>Día 1:</strong> Twitter Profile</h4>
+                                <p>El desafío consistía en recrear mi perfil de twitter en formato mobile.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-1-moodboard.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-1.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 2-->
+                            <div class="row py-2" id="dia-2">
+                                <h4><strong>Día 2:</strong> Uber Rural</h4>
+                                <p>El desafío consistía en realizar la aplicación de Uber pero considerando que la app
+                                    presta servicio en zonas rurales. </p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-12-moodboard.png"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-2.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 3-->
+                            <div class="row  py-2" id="dia-3">
+                                <h4><strong>Día 3:</strong> Reviews de inquilinos en Zonaprop</h4>
+                                <p>Consistía en crear una sección de comentarios de inquilinos visibles con una
+                                    subscripción de paga.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-3-moodboard.png"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-3.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 4-->
+                            <div class="row py-2" id="dia-4">
+                                <h4><strong>Dia 4:</strong> Single product</h4>
+                                <p>Diseño de una página para un producto de un e-commerce.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-4-moodboard.png"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-4.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 5-->
+                            <div class="row  py-2" id="dia-5">
+                                <h4><strong>Dia 5:</strong> Direct messaging</h4>
+                                <p>Elaboración de una página de mensajería en formato web.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-5-moodboard.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-5.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 6-->
+                            <div class="row py-2" id="dia-6">
+                                <h4><strong>Dia 6:</strong> Music player</h4>
+                                <p>El desafío consistía en diseñar dos pantallas de una app de musica, siendo la vista
+                                    de un album de musica y una pantalla de reproduccion en curso.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-6-moodboard.png"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-6.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 7-->
+                            <div class="row  py-2" id="dia-7">
+                                <h4><strong>Dia 7:</strong> Search results</h4>
+                                <p>Creación de un sitio web que muestra los resultados de una búsqueda de alojamiento
+                                    turístico.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-7-moodboard.png"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-7.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 8-->
+                            <div class="row py-2" id="dia-8">
+                                <h4><strong>Dia 8:</strong> Checkout</h4>
+                                <p>Diseñando una página de pago de un producto, incluyendo las opciones de envío. </p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-8-moodboard.png"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-8.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 9-->
+                            <div class="row  py-2" id="dia-9">
+                                <h4><strong>Dia 9:</strong> Analytics chart</h4>
+                                <p>Cconsistía en diseñar una página que mostrara métricas con forma de gráficos.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-9-moodboard.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-9.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 10-->
+                            <div class="row py-2" id="dia-10">
+                                <h4><strong>Dia 10:</strong> E-Wallet</h4>
+                                <p>El desafío consistió en crear una pantalla principal de una billetera virtual.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-10-moodboard.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-10.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 11-->
+                            <div class="row  py-2" id="dia-11">
+                                <h4><strong>Dia 11:</strong> Habit tracker</h4>
+                                <p>Diseño de la pantalla principal de un habit tracker, considerando el listado de
+                                    habitos y un gráfico de progreso.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-11-moodboard.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-11.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 12-->
+                            <div class="row py-2" id="dia-12">
+                                <h4><strong>Dia 12:</strong> Diseño en una hora (Rediseñado)</h4>
+                                <p>Diseño de un hero de una landing page para una marca de sillones.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-12-moodboard.png"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-12.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 13-->
+                            <div class="row  py-2" id="dia-13">
+                                <h4><strong>Dia 13:</strong> Delivery Tracker</h4>
+                                <p>Diseño de una pantalla de trackeo de una app de delibery, considerando mapa con
+                                    ubicación y descripción del envío.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-13-moodboard.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-13.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!--Dia 14-->
+                            <div class="row py-2" id="dia-14">
+                                <h4><strong>Dia 14:</strong> Portfolio page</h4>
+                                <p>Último desafío, el cual consistía en crear una página de portafolio con todos los
+                                    challenges del UI Camp.</p>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-14-moodboard.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                                <div class="col-xl-6 py-2">
+                                    <img src="assets/img/proyectos/ui-camp/dia-14.jpg"
+                                        class="gallery-item gallery-item-100" alt="">
+                                </div>
+                            </div>
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/1.jpg" class="modal-img" alt="modal img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!--Resultado final-->
+                    <div class="conclusion py-4" id="conclusion">
+                        <h2>Conclusión</h2>
+                        <p>Considero que este desafío diario me ha permitido mejorar mis habilidades de diseño, pudiendo diseñar diferentes interfaces con elementos que antes no habia tenido la oportunidad de considerar a la hora de implementarlos como graficos y gestion de datos. Además, me permitió aprender a utilizar de forma básica el autolayout de figma, el cual no habia utilizado con anterioridad, optimizando los procesos de diseño de mockup de alta fidelidad.</p>
+                    </div>
+
+                    <hr>
+
+                    <!--Crear un ver proyecto anterior y siguiente-->
+                    <div class="seleccion-proyecto py-4">
+                        <div>
+                            <img class="selector-proyecto_arrow" src="assets/img/svg/chevron-left.svg" alt="">
+                            <a href="promak.html">Proyecto anterior</a>
+                        </div>
+
+                        <div>
+                            <a href="xms.html">Proyecto siguiente</a>
+                            <img class="selector-proyecto_arrow" src="assets/img/svg/chevron-right.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Solo está para la estructura-->
+                <div class="col-xl-3"></div>
+            </div>
+        </section>
+
+        <!--Tengamos contacto-->
+        <section class="contact" id="contact">
+            <div class="contact_texto container">
+                <h2>Tengamos contacto</h2>
+                <p>Si tienes alguna duda de mi trabajo o algun proyecto, puedes contactarme en cualquiera de las redes
+                    sociales a continuación.</p>
+                <div class="contact_texto-icon">
+                    <a href="mailto:kiara.inzunza@gmail.com" target="_blank"><img src="assets/img/svg/mail.svg" alt="mail">kiara.inzunza@gmail.com</a>
+                    <a href="https://www.instagram.com/kiarauxui/" target="_blank"><img
+                            src="assets/img/svg/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/kiarainzunza/" target="_blank"> <img
+                            src="assets/img/svg/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://www.behance.net/kiarainzunza" target="_blank"><img src="assets/img/svg/behance.svg"
+                            alt="behance"></a>
+                    <a href="https://dribbble.com/kiarainzunza" target="_blank"><img src="assets/img/svg/dribbble.svg"
+                            alt="dribble"></a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer_texto">© 2024 | Sitio web realizado con HTML5 y CSS3</p>
+    </footer>
+
+
+    <!--scripts Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

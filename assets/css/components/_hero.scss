@@ -1,0 +1,39 @@
+// Página principal Hero
+
+.hero{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f7ebfa;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &_content{
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        //Texto Kiara Inzunza destacado
+        .destacado{
+            color: #810097;
+        }
+    }
+
+    &_img{
+        max-width: 40%;
+        margin-left: auto;
+        //ajustar la imagen al final
+    }
+}
+
+//Responsive
+@media (max-width: 576px){
+    .hero_img{
+        display: none;
+    }
+    .hero_content{
+        max-width: 100%;
+    }
+}

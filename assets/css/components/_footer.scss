@@ -1,0 +1,12 @@
+//CSS Footer
+.footer{
+    background-color: #6E217B;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+
+    &_texto{
+        color: white;
+        margin: 0;
+    }
+}

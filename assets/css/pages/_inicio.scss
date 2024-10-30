@@ -1,0 +1,107 @@
+//CSS de inicio
+
+//Conoceme
+.about {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    width: 60%;
+
+    &_img {
+        width: 30%;
+        height: fit-content;
+    }
+
+    &_text {
+        width: 70%;
+
+        &-enlaces {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+            //Boton curriculum CV
+            &-curriculum {
+                text-decoration: none;
+                padding: 10px 20px;
+                color: #810097;
+                background-color: white;
+                border: 1px solid #810097;
+                text-align: center;
+                border-radius: 100px;
+            }
+
+            &-curriculum:hover {
+                color: #50025e;
+                background-color: #e9caf0;
+            }
+
+            //Boton Portfolio
+            &-portfolio {
+                text-decoration: none;
+                color: white;
+                background-color: #810097;
+                padding: 10px 20px;
+                text-align: center;
+                border-radius: 100px;
+            }
+
+            &-portfolio:hover {
+                background-color: #50025e;
+            }
+        }
+    }
+}
+
+
+//Tengamos contacto
+.contact {
+    background-color: #F8ECFA;
+    padding: 2rem;
+
+    &_texto {
+        width: 40%;
+        text-align: center;
+
+        &-icon {
+            img {
+                width: 2rem;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+//@media (max-width: 768px) {} para ajustar las medidas
+@media (max-width:1024px){
+    .about, .contact_texto{
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .about, .contact_texto{
+        width: 100%;
+    }
+}
+@media (max-width: 576px){
+    .about{
+        .row{
+            flex-direction: column;
+            align-items: center;
+        }
+        &_img{
+            width: 50%;
+            padding-bottom: 20px;
+        }
+        &_text-enlaces{
+            flex-direction: column;
+        }
+    }
+    .contact{
+        &_texto-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

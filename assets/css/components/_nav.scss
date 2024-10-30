@@ -1,0 +1,86 @@
+.nav {
+    padding: 20px 0;
+    //logo
+    &_logo-font {
+        color: $dark-purple;
+        font-size: 18px;
+    }
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+    &_links {
+        padding: 0 20px;
+    }
+    //Links de navegacion
+    &_links-lista {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    //redes sociales
+    &_social-network img {
+        padding: 0 5px 0 5px;
+        width: 30px;
+    }
+
+    .nav-link{
+        padding: 0;
+    }
+}
+
+
+/* ---------- Responsive ---------- */
+
+//Ajuste tablet
+@media (max-width: 768px) {
+    .nav_links {
+        display: flex;
+        justify-content: end;
+        padding: 20px 0 10px 0;
+    }
+
+    .nav_social-network {
+        display: flex;
+        justify-content: end;
+        padding: 10px 0 20px 0;
+        gap: 10px;
+    }
+}
+
+//Ajuste celular
+@media (max-width: 576px) {
+    .navbar{
+        padding:20px;
+    }
+    .nav{
+        &_logo-font{
+            font-size: 16px;
+        }
+        &_links{
+            justify-content: center;
+            &-lista{
+                flex-direction: column;
+            }
+        }
+        &_social-network{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
