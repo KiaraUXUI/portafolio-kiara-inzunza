@@ -353,6 +353,11 @@ a {
     justify-content: start !important;
   }
 }
+@media (max-width: 576px) {
+  .header_text p {
+    width: 100%;
+  }
+}
 .breadcrumb-item a {
   color: #810097;
   text-decoration: none;
